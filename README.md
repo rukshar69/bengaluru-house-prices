@@ -20,9 +20,9 @@ The aim is to create a simplified version of the data for linear regression.
 
 - There are 1287 unique locations mentioned in the *location* column. The distribution of location values is very skewed
 
-![skewed location distributioin](https://github.com/rukshar69/bengaluru-house-prices/blob/main/training_model/location_density.png)
-
-<img src="https://github.com/rukshar69/bengaluru-house-prices/blob/main/training_model/location_density.png" alt="skewed dist" width="300" height="200">
+<div style="text-align:center;">
+    <img src="https://github.com/rukshar69/bengaluru-house-prices/blob/main/training_model/location_density.png" alt="skewed dist" width="300" height="200">
+</div>
 
 
 - Given a large number of locations don't have much datapoints, we need to apply a dimensionality reduction technique here to reduce the number of locations. locations having less than 10 rows are tagged as **other** locations. So, the number of categories is reduced by a lot. When using one-hot encoding, it will help having fewer dummy columns. Now, the number of unique locations is *241*.
