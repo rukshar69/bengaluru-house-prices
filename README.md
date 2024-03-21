@@ -8,6 +8,8 @@ We get the data on Bengaluru house prices from Kaggle. The data contains about 1
 The **price** is the **target variable** here. 
 
 ## Data Processing
+
+The code for data cleaning is in [this notebook](https://github.com/rukshar69/bengaluru-house-prices/blob/main/training_model/bengaluru_property_dataprocessing.ipynb)
 The aim is to create a simplified version of the data for linear regression.
 
 - 5 columns: *'location', 'size', 'total_sqft', 'bath', 'price'* are kept
@@ -57,11 +59,18 @@ The aim is to create a simplified version of the data for linear regression.
 
 - We now consider a condition where an apartment with n bhk should have no more than n+2 bathrooms. It would be quite *absurd* or *erroneous* to have apartments where for n bhks there are more than n+2 baths. Such apartments are thus considered outliers and are removed from the dataset.
 
-After such thorough cleaning, we move on to training a Linear Regression model using this clean and slimmed down dataset.
+After such thorough cleaning, we move on to training a **Linear Regression** model using this clean and slimmed-down dataset.
 
 
 ## Training 
 
+The code for training is in [this notebook](https://github.com/rukshar69/bengaluru-house-prices/blob/main/training_model/bengaluru_property_training.ipynb)
+
+- There are 4 features: location,	total_sqft,	bath, and	bhk
+    - The **price** column is the target variable.
+- **One-hot Encoding** is performed for **location**, a string categorical feature. For each location, we get a new binary column. Its value is 1 if the datapoint belongs to that location otherwise it's 0. However, we drop the *other* location column since any datapoint belonging to the *other* category will have 0s in all other location columns.
+- The test set is 20% of all datapoints.
+- The **coefficient of determination**/**R^2 value** for the trained model is about **86%** on the test set, pretty good for a simplified dataset.
 
 
 # Reference
