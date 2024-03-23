@@ -1,7 +1,7 @@
 # Bengaluru House Price Prediction
 
 <details>
-<summary> <h1>Training Linear Regression Model</h1> </summary>
+<summary> <b>Training Linear Regression Model</b> </summary>
 
 We get the data on Bengaluru house prices from Kaggle. The data contains about 13k rows and 9 columns about property prices. The columns are: 
 
