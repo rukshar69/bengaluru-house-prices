@@ -5,7 +5,7 @@ We get the data on Bengaluru house prices from Kaggle. The data contains about 1
 
 *area_type,	availability,	location,	size,	society,	total_sqft,	bath, and	balcony	price*
 
-The **price** is the **target variable** here. 
+The **price**(in lakhs or *100000 rupees*) is the **target variable** here. 
 
 ## Data Processing
 
@@ -16,9 +16,9 @@ The aim is to create a simplified version of the data for linear regression.
 - Any row with *nan* values is dropped
 - The *size* column, referring to the number of bedrooms, is processed to construct a new column *bhk*. The *size* column contains string values like `2 BHK`. We take only the number value and insert it in the *bhk* column. The *size* column is then dropped.
 - Values in *total_sqft* were found to have range values like `1133 - 1384`. So, the column is modified to have only float values. For the previously mentioned range values, the average is taken and the range value is replaced with the average float value. Cases like `34.46Sq. Meter` are dropped to keep things simple.
-- A new feature *price_per_sqft* is created through dividing the *price* column by *total_sqft*
+- A new feature *price_per_sqft*(in rupees) is created through dividing the *price* column by *total_sqft*
 
-### Dimensionality Reduction in the Location Column**
+### Dimensionality Reduction in the Location Column
 
 - There are 1287 unique locations mentioned in the *location* column. The distribution of location values is very skewed
 
@@ -77,4 +77,5 @@ The code for training is in [this notebook](https://github.com/rukshar69/bengalu
 
 - [House Price Dataset](https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data/data)
 - [Linear Regression Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
+- [FastAPI model dump](https://docs.pydantic.dev/latest/concepts/serialization/#modelmodel_dump)
 - [Helper Tutorial](https://github.com/codebasics/py/tree/master/DataScience/BangloreHomePrices)
