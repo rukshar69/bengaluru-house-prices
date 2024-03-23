@@ -1,9 +1,8 @@
 # Bengaluru House Price Prediction
 
-<detailes>
-<summary> Training Linear Regression Model </summary>
+<details>
+<summary> <h1>Training Linear Regression Model</h1> </summary>
 
-# Training Linear Regression Model
 We get the data on Bengaluru house prices from Kaggle. The data contains about 13k rows and 9 columns about property prices. The columns are: 
 
 *area_type,	availability,	location,	size,	society,	total_sqft,	bath, and	balcony	price*
@@ -75,7 +74,7 @@ The code for training is in [this notebook](https://github.com/rukshar69/bengalu
 - The test set is 20% of all datapoints.
 - The **coefficient of determination**/**R^2 value** for the trained model is about **86%** on the test set, pretty good for a simplified dataset.
 
-</detailes>
+</details>
 
 
 
