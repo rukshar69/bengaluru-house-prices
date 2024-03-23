@@ -105,6 +105,12 @@ The code for training is in [this notebook](https://github.com/rukshar69/bengalu
     <img src="https://github.com/rukshar69/bengaluru-house-prices/blob/main/streamlit-app/bengaluru_streamlit.png" alt="streamlit app" width="500" height="500">
 </div>
 
+A gif of the using the frontend...
+
+<div style="text-align:center;">
+    <img src="https://github.com/rukshar69/bengaluru-house-prices/blob/main/streamlit-app/fastapi_streamlit_bengaluru_house_price.gif" alt="streamlit app" width="500" height="500">
+</div>
+
 </details>
 
 # Reference
