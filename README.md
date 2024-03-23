@@ -114,6 +114,10 @@ A gif of the using the frontend...
 
 </details>
 
+# LinkedIn Articles
+- [Classical ML with Classical Data: Linear Regression on Real Estate Price Prediction in Bengaluru](https://www.linkedin.com/pulse/classical-ml-data-linear-regression-real-estate-price-rukshar-alam-1omqc/?trackingId=O6pkfCjcSiS8oTMHghc%2FUA%3D%3D)
+- [Deploying House Price Predictor using FastAPI](https://www.linkedin.com/pulse/deploying-house-price-predictor-using-fastapi-streamlit-rukshar-alam-nmbrc/)
+
 # Reference
 
 - [House Price Dataset](https://www.kaggle.com/datasets/amitabhajoy/bengaluru-house-price-data/data)
