@@ -3,6 +3,7 @@
 <details>
 <summary> <b>Training Linear Regression Model</b> </summary>
 
+<br>
 We get the data on Bengaluru house prices from Kaggle. The data contains about 13k rows and 9 columns about property prices. The columns are: 
 
 *area_type,	availability,	location,	size,	society,	total_sqft,	bath, and	balcony	price*
