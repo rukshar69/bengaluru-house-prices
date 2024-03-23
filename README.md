@@ -87,7 +87,7 @@ The code for training is in [this notebook](https://github.com/rukshar69/bengalu
 ### FastAPI 
 
 - The FastAPI API to call the property price prediction function(that uses the Linear Regression model) is **http://127.0.0.1:8000/predict_price**
-- **PropertyInput** class (extends from pydantic BaseModel) is used to accept the input data from the user in the form of JSON. **PropertyOutput** class (extends from pydantic BaseModel) is used to return the predicted price in the form of JSON.
+- **PropertyInput** class (extends from pydantic BaseModel) is used to accept the input data from the user in the form of JSON. **PropertyOutput** class (extends from PropertyInput) is used to return the predicted price in the form of JSON.
 - **PropertyInput** has 4 fields: location(str), area(float), bathrooms(integer), and bedrooms(integer).
 - **PropertyOutput** has an additional field: predicted_price(float).
 - The API calls a method `predict` that extracts the input data, passes it to the Linear Regression model, and returns the predicted price.
@@ -96,7 +96,7 @@ The code for training is in [this notebook](https://github.com/rukshar69/bengalu
 ### Streamlit App
 
 - The frontend provides the 4 input fields: location, area, bathrooms, and bedrooms.
-- The frontend calls the `predict_price` method after clicking the buttong. This method uses the `requests` library to call the `http://127.0.0.1:8000/predict_price` API and send the input data in the form of JSON.
+- The frontend calls the `predict_price` method after clicking the button. This method uses the `requests` library to call the `http://127.0.0.1:8000/predict_price` API and send the input data in the form of JSON.
     - The API returns the predicted price in the form of JSON. The frontend displays the predicted price.
 - To start the frontend run the command: `streamlit run streamlit_app.py`
 - The frontend can be viewed and used at the address `http://127.0.0.1:8501/`
