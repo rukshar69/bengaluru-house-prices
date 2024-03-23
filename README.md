@@ -1,5 +1,8 @@
 # Bengaluru House Price Prediction
 
+<detailes>
+<summary> Training Linear Regression Model </summary>
+
 # Training Linear Regression Model
 We get the data on Bengaluru house prices from Kaggle. The data contains about 13k rows and 9 columns about property prices. The columns are: 
 
@@ -71,6 +74,9 @@ The code for training is in [this notebook](https://github.com/rukshar69/bengalu
 - **One-hot Encoding** is performed for **location**, a string categorical feature. For each location, we get a new binary column. Its value is 1 if the datapoint belongs to that location otherwise it's 0. However, we drop the *other* location column since any datapoint belonging to the *other* category will have 0s in all other location columns.
 - The test set is 20% of all datapoints.
 - The **coefficient of determination**/**R^2 value** for the trained model is about **86%** on the test set, pretty good for a simplified dataset.
+
+</detailes>
+
 
 
 # Reference
