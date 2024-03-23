@@ -80,6 +80,7 @@ The code for training is in [this notebook](https://github.com/rukshar69/bengalu
 <details>
 <summary> <b>FastAPI API and Streamlit Frontend</b> </summary>
 
+![app structure](https://github.com/rukshar69/bengaluru-house-prices/blob/main/streamlit-app/house_price_predictor.jpg)
 
 - The code for the FastAPI API is in [fastapi_app.py](https://github.com/rukshar69/bengaluru-house-prices/blob/main/API/fastapi_app.py)
 - The code for the Streamlit frontend is in [streamlit_app.py](https://github.com/rukshar69/bengaluru-house-prices/blob/main/streamlit_app.py)
