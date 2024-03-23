@@ -102,7 +102,7 @@ The code for training is in [this notebook](https://github.com/rukshar69/bengalu
 - The frontend can be viewed and used at the address `http://127.0.0.1:8501/`
 
 <div style="text-align:center;">
-    <img src="https://github.com/rukshar69/bengaluru-house-prices/blob/main/streamlit-app/bengaluru_streamlit.png" alt="streamlit app" width="500" height="300">
+    <img src="https://github.com/rukshar69/bengaluru-house-prices/blob/main/streamlit-app/bengaluru_streamlit.png" alt="streamlit app" width="500" height="500">
 </div>
 
 </details>
