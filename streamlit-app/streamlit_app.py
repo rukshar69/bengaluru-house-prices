@@ -38,11 +38,17 @@ if st.button("Predict Price"):
     # Call the API and get the response
     prediction = predict_price(location, area, bedrooms, bathrooms)
 
-    # Display the prediction results
+    # Display the prediction results with a box around the price
     st.subheader("Prediction Results")
-    st.write(f"**Predicted Price: {prediction['predicted_price']:.2f} Lakhs**")
-    st.write(f"Location: {prediction['location']}")
-    st.write(f"Area: {prediction['area']:.2f} sqft")
-    st.write(f"Bedrooms: {prediction['bedrooms']}")
-    st.write(f"Bathrooms: {prediction['bathrooms']}")
-    
+    with st.container():  # Create a container for styling
+        col1, col2 = st.columns(2)  # Split the container into two columns
+        with col1:
+            st.write(f"Location: {prediction['location']}")
+            st.write(f"Area: {prediction['area']:.2f} sqft")
+            st.write(f"Bedrooms: {prediction['bedrooms']}")
+            st.write(f"Bathrooms: {prediction['bathrooms']}")
+        with col2:
+            # Use markdown with raw HTML for styling
+            st.markdown(f"""<div style="border: 2px solid #ccc; padding: 10px; border-radius: 5px;">
+            <b>Predicted Price: {prediction['predicted_price']:.2f} lakhs</b>
+            </div>""", unsafe_allow_html=True)
